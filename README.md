@@ -1,3 +1,6 @@
+
+### Under Construction 🚧🚧🚧
+
 ## Overview
 
 Upamanyu Academy is an educational website designed to provide video lectures and live sessions, specifically targeting students preparing for SEE, NEB boards, and entrance examinations. The project is currently under construction and will feature a user-friendly interface with a focus on accessibility and usability.
