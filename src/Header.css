@@ -1,18 +1,72 @@
-.Header header{
-    background-color: gray;
-    display:flex;
+.Header header {
+    background: linear-gradient(135deg, #3a3a3a, #1f1f1f, #1f1f1f);
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-.Header a{
-    font-family: 'Courier New', Courier, monospace;
+.Header a {
     text-decoration: none;
     color: white;
 }
-.Header .nav-links{
+
+.Header .nav-links {
     list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
 }
-.Header .nav-links li{
-    display: inline-block;
-    padding: 0px 20px;
+
+.Header .nav-links li {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.button {
+    background-color: #4a90e2;
+    color: white;
+    margin-right: 80px;
+    height: 45px;
+    width: 75px;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #357ABD;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    z-index: 1;
+    width: 150px;
+}
+
+.dropdown-menu li {
+    padding: 8px;
+    color: white;
+    white-space: nowrap;
+}
+
+.dropdown-menu li:hover {
+    background-color: #555;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.Header .nav-links {
+    margin-left: 20px;
 }
