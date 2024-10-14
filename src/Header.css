@@ -1,6 +1,7 @@
 .Header header {
-    background: linear-gradient(135deg, #3a3a3a, #1f1f1f, #1f1f1f);
+    background: linear-gradient(135deg, #3a3a3a, #1f1f1f);
     display: flex;
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -16,6 +17,7 @@
     display: flex;
     gap: 20px;
     position: relative;
+    flex-wrap: wrap; 
 }
 
 .Header .nav-links li {
@@ -26,7 +28,6 @@
 .button {
     background-color: #4a90e2;
     color: white;
-    margin-right: 80px;
     height: 45px;
     width: 75px;
     border: none;
@@ -67,6 +68,37 @@
     display: block;
 }
 
-.Header .nav-links {
-    margin-left: 20px;
+
+@media (max-width: 768px) {
+    .Header header {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .Header .nav-links {
+        flex-direction: column; 
+        gap: 10px; 
+        width: 100%; 
+    }
+
+    .button {
+        margin-top: 10px; 
+        margin-right: 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    .Header header {
+        padding: 10px; 
+    }
+
+    .Header .nav-links li {
+        padding: 5px 10px; 
+    }
+
+    .button {
+        width: 100%; 
+        height: 40px; 
+        margin: 10px 0; 
+    }
 }
