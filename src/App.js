@@ -3,6 +3,7 @@ import Header from './Header';  // Navbar component
 import Intro from './Intro';  // Home page component
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'; // For routes
 import Login from './Login';  // Login page component
+import Courses from './Courses';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
 
         {/* Define routes for different pages */}
         <Routes>
-          <Route path="/" element={<Intro />} />   {/* Home page */}
+          <Route path="/" element={<><Intro /> <Courses /></>} />   {/* Home page */}
           <Route path="/login" element={<Login />} />  {/* Login page */}
         </Routes>
       </div>
