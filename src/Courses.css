@@ -1,0 +1,40 @@
+.courses-section {
+    background: rgba(0, 0, 0, 0.81); 
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.courses-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course-card {
+    background-color: rgba(29, 29, 29, 0.86);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.63); 
+    transition: transform 0.2s;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    font-size: 1rem;
+}
