@@ -1,7 +1,11 @@
 import React from 'react';
-import './Login.css'; // Import the CSS file
-
+import './Login.css'; 
+import { useNavigate } from 'react-router-dom';
 const Login = () => {
+  const navigate = useNavigate();
+  const handleSignupClick = () => {
+    navigate('/Signup'); // Redirect to Signup page
+  };
   return (
     <div className="login-container">
       <div className="login-box">
@@ -19,7 +23,7 @@ const Login = () => {
         </form>
         <div className="create-account-section">
           <p>Don't have an account?</p>
-          <button className="create-account-btn">Create an account</button>
+          <button className="create-account-btn" onClick={handleSignupClick}>Create an account</button>
         </div>
       </div>
     </div>
