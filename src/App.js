@@ -1,9 +1,15 @@
-import './App.css'; // App Styles
-import Header from './Header';  // Navbar component
-import Intro from './Intro';  // Home page component
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'; // For routes
-import Login from './Login';  // Login page component
-import Courses from './Courses';
+import "./App.css"; // App Styles
+import Header from "./Header"; // Navbar component
+import Intro from "./Intro"; // Home page component
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom"; // For routes
+import Login from "./Login"; // Login page component
+import Courses from "./Courses"; //Courses section component
+import Signup from "./Signup"; //Signup page component
 
 function App() {
   return (
@@ -14,8 +20,17 @@ function App() {
 
         {/* Define routes for different pages */}
         <Routes>
-          <Route path="/" element={<><Intro /> <Courses /></>} />   {/* Home page */}
-          <Route path="/login" element={<Login />} />  {/* Login page */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Intro /> <Courses />
+              </>
+            }
+          />{" "}
+          {/* Home page */}
+          <Route path="/login" element={<Login />} /> {/* Login page */}
+          <Route path="/Signup" element={<Signup />} /> {/*Signup Page*/}
         </Routes>
       </div>
     </Router>
@@ -28,8 +43,9 @@ const HeaderWrapper = () => {
 
   return (
     <>
-      {/* Render Header only if not on the login page */}
-      {location.pathname !== '/login' && <Header />}
+      {/* Render Header only if not on the login page and signup page */}
+      {location.pathname !== "/login" && <Header />}
+      {location.pathname !== "/Signup" && <Header />}
     </>
   );
 };
