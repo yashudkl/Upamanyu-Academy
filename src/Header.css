@@ -105,5 +105,5 @@
 .buttons{
     width: 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
