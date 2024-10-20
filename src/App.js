@@ -44,7 +44,7 @@ const HeaderWrapper = () => {
   return (
     <>
       {/* Render Header only if not on the login page and signup page */}
-      {location.pathname !== "/login" && location.pathname !== "/signup" && <Header />}
+      {location.pathname !== "/login" && location.pathname !== "/Signup" && <Header />}
       
     </>
   );
