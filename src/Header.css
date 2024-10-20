@@ -102,3 +102,8 @@
         margin: 10px 0; 
     }
 }
+.buttons{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
