@@ -9,6 +9,10 @@ function Header() {
   const handleLoginClick = () => {
     navigate('/login'); // Redirect to login page
   };
+   // Handles Sign up Button Click
+   const handleSignupClick = () => {
+    navigate('/Signup'); // Redirect to Signup page
+  };
   return (
     <div className="Header">
       <header>
@@ -50,7 +54,7 @@ function Header() {
         </nav>
         <div className="buttons">
         <button className="button" onClick={handleLoginClick} >Login in</button>
-        <button className="button" onClick={handleLoginClick} >Sign up</button>
+        <button className="button" onClick={handleSignupClick} >Sign up</button>
         </div>
        
       </header>
