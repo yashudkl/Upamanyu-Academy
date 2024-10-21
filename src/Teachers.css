@@ -1,0 +1,54 @@
+.teachers-section {
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-align: center;
+  }
+  
+  .teachers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .teacher-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .teacher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .teacher-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(0, 0, 0, 0.81);
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 30px;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: rgba(0, 0, 0, 0.81);
+  }
+  
+  p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
