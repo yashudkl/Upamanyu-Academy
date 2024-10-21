@@ -10,6 +10,7 @@ import {
 import Login from "./Login"; // Login page component
 import Courses from "./Courses"; //Courses section component
 import Signup from "./Signup"; //Signup page component
+import Teachers from "./Teachers"; //Teachers component
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
             path="/"
             element={
               <>
-                <Intro /> <Courses />
+                <Intro /> <Courses /> <Teachers />
               </>
             }
           />{" "}
