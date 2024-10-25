@@ -22,7 +22,7 @@ function Header() {
               <a href="#home">Home</a>
             </li>
             <li className="nav-item dropdown">
-              <a href="#Lectures">Lectures<span style={{ fontSize: '12px' }}>          &#x25BC;</span>
+              <a href="#Lectures">Lectures<span style={{ fontSize: '10px' }}>          &#x25BC;</span>
               </a>
               <ul className="dropdown-menu">
                 <li>Grade 10</li>
@@ -35,7 +35,7 @@ function Header() {
               <a href="#Live">Live</a>
             </li>
             <li className="nav-item dropdown">
-              <a href="#Questions">Questions <span style={{ fontSize: '12px' }}> &#x25BC;</span>
+              <a href="#Questions">Questions <span style={{ fontSize: '10px' }}> &#x25BC;</span>
               </a>
               <ul className="dropdown-menu">
                 <li>Grade 10</li>

@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    background: linear-gradient(135deg, #3a3a3a, #1f1f1f, #0d0d0d);
+    background: rgba(0, 0, 0, 0.81); 
   }
   
   .intro-image {

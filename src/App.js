@@ -19,7 +19,7 @@ function App() {
         {/*Rendering Navbar only on conditions*/}
         <HeaderWrapper />
 
-        {/* Define routes for different pages */}
+        {/* Defining routes for different pages */}
         <Routes>
           <Route
             path="/"
@@ -44,7 +44,7 @@ const HeaderWrapper = () => {
 
   return (
     <>
-      {/* Render Header only if not on the login page and signup page */}
+      {/* Renders Header only if not on the login page and signup page */}
       {location.pathname !== "/login" && location.pathname !== "/Signup" && <Header />}
       
     </>

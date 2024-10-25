@@ -1,38 +1,18 @@
-.App {
-  text-align: center;
+body {
+  color: #f5f5f5;
+  font-family: 'Roboto', sans-serif; /* For body text */
+  font-size: 16px; /* Sets a base font size */
+  line-height: 1.6; /* Improves readability */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Remove default padding */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif; /* For headings */
+  font-weight: 600; /* Uses bold for headings */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  font-family: 'Poppins', sans-serif; /* For button text */
+  font-weight: 600; /* Uses bold for button text */
 }
