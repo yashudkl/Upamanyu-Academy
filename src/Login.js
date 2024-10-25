@@ -5,7 +5,7 @@ const Login = () => {
   const navigate = useNavigate();
   const handleSignupClick = () => {
     navigate('/Signup'); // Redirect to Signup page
-  };
+  }//Handling required 
   return (
     <div className="login-container">
       <div className="login-box">

@@ -19,7 +19,7 @@ function App() {
         {/*Rendering Navbar only on conditions*/}
         <HeaderWrapper />
 
-        {/* Defining routes for different pages */}
+        {/* Define routes for different pages */}
         <Routes>
           <Route
             path="/"
