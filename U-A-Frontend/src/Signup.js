@@ -1,29 +1,29 @@
 import React, { useState } from 'react';
+import axios from 'axios'
 import './Signup.css';
 
-const Signup = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    password: '',
-    confirmPassword: '',
-  });
+function Signup(){
+  const [name, setName] = useState()
+  const [email, setEmail] = useState()
+  const [password, setPassword] = useState()
+  const [confirmpassword, setConfirmPassword] = useState()
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (formData.password !== formData.confirmPassword) {
+    if (password !== confirmpassword) {
       alert("Passwords don't match!");
       return;
     }
     // Handle form submission
-    console.log('Form Submitted:', formData);
+    axios.post('http://localhost:3001/Signup',{name,email,password})
+    .then(result => {console.log(result)
+      
+    })
+
+    .catch(err => console.log(err))
   };
 
   return (
@@ -35,9 +35,9 @@ const Signup = () => {
           type="text"
           id="name"
           name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
+       
+          onChange={(e) => setName(e.target.value)}
+          
         />
 
         <label htmlFor="email">Email:</label>
@@ -45,9 +45,7 @@ const Signup = () => {
           type="email"
           id="email"
           name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
+          onChange={(e) => setEmail(e.target.value)}
         />
 
         <label htmlFor="password">Password:</label>
@@ -55,9 +53,7 @@ const Signup = () => {
           type="password"
           id="password"
           name="password"
-          value={formData.password}
-          onChange={handleChange}
-          required
+          onChange={(e) => setPassword(e.target.value)}
         />
 
         <label htmlFor="confirmPassword">Confirm Password:</label>
@@ -65,9 +61,7 @@ const Signup = () => {
           type="password"
           id="confirmPassword"
           name="confirmPassword"
-          value={formData.confirmPassword}
-          onChange={handleChange}
-          required
+          onChange={(e) => setConfirmPassword(e.target.value)}
         />
 
         <button type="submit">Sign Up</button>
