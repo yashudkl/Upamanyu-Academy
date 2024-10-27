@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios'
 import './Signup.css';
-
+import {useNavigate} from 'react-router-dom';
 function Signup(){
   const [name, setName] = useState()
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
   const [confirmpassword, setConfirmPassword] = useState()
-
-
-
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,8 +18,7 @@ function Signup(){
     // Handle form submission
     axios.post('http://localhost:3001/Signup',{name,email,password})
     .then(result => {console.log(result)
-      
-    })
+      navigate('/login')    })
 
     .catch(err => console.log(err))
   };

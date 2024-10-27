@@ -14,13 +14,24 @@ mongoose.connect('mongodb+srv://yashudkl:0MMNikPcsjiCzQJQ@u-a.gaphj.mongodb.net/
 .then(() => console.log('Connected to MongoDB - Upamanyu-Academy'))
 .catch((err) => console.log('Failed to connect to MongoDB', err));
 
-//Post request API-integration
+//Post request Signup API-integration
 app.post('/Signup',(req,res)=>{
 UsersModel.create(req.body)
 .then(users => res.json(users))
 .catch(err => res.json(err))
 })
 
+// app.post("/login",(req,res)=>{
+//     const {email,password} = req.body;
+//     UsersModel.findOne({email:email})
+//     .then(user => {
+//         if(user){
+//             if(user.password == password){
+//                 res.json("success")
+//             } else{}
+//         }
+//     })
+// })
 //Server runs at 3001
 app.listen(3001,()=>{
     console.log('server is running')
