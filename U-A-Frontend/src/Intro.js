@@ -9,7 +9,9 @@ function Intro() {
       <div class="intro-card">
         <img src={logo} alt="Upamanyu Academy Logo" className="intro-image" />
         <div className="intro-content">
-          <h1>Welcome to Upamanyu Academy!</h1>
+          <h1 className="typing">
+          Welcome to Upamanyu Academy!
+          </h1>
           <p>
             At Upamanyu Academy, we believe in empowering students to achieve
             their full potential through innovative and effective learning
