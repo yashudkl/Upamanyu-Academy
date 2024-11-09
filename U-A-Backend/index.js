@@ -21,17 +21,23 @@ UsersModel.create(req.body)
 .catch(err => res.json(err))
 })
 
-// app.post("/login",(req,res)=>{
-//     const {email,password} = req.body;
-//     UsersModel.findOne({email:email})
-//     .then(user => {
-//         if(user){
-//             if(user.password == password){
-//                 res.json("success")
-//             } else{}
-//         }
-//     })
-// })
+app.post("/login",(req,res)=>{
+    const {email,password} = req.body;
+    UsersModel.findOne({email:email})
+    .then(user => {
+        if(user){
+            if(user.password == password){
+                res.json("success")
+            } else{
+                res.json("The password is incorrect")
+            }
+          
+        }
+        else   {
+            res.json("Account is not registered")
+        }
+    })
+})
 //Server runs at 3001
 app.listen(3001,()=>{
     console.log('server is running')
