@@ -16,11 +16,14 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission for login
-    axios.post('http://localhost:3001/login', { email, password })
+    axios.post('http://localhost:3001/login', {email, password})
       .then(result => {
         console.log(result);
+        if(result.data == "Success"){
+          navigate('/')
+        }
         // Redirect to another page or perform further actions on success
-        navigate('/home'); // Adjust path as needed
+        navigate('/'); // Adjust path as needed
       })
       .catch(err => console.log(err));
   };

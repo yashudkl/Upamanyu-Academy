@@ -33,3 +33,27 @@
       width: 100%;
     }
   }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 28ch;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid;
+    animation: typing 3s steps(28, end) infinite,
+               blink 0.5s step-end infinite alternate;
+  }
