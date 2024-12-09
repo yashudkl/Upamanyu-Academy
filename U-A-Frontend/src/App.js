@@ -1,16 +1,16 @@
 import "./App.css"; // App Styles
-import Header from "./Header"; // Navbar component
-import Intro from "./Intro"; // Home page component
+import Header from "./components/navbar/Header"; // Navbar component
+import Intro from "./pages/Home/Intro"; // Home page component
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   useLocation,
 } from "react-router-dom"; // For routes
-import Login from "./Login"; // Login page component
-import Courses from "./Courses"; //Courses section component
-import Signup from "./Signup"; //Signup page component
-import Teachers from "./Teachers"; //Teachers component
+import Login from "./pages/Login/Login"; // Login page component
+import Courses from "./components/courses/Courses"; //Courses section component
+import Signup from "./pages/Signup/Signup"; //Signup page component
+import Teachers from "./components/teachers/Teachers"; //Teachers component
 
 function App() {
   return (
